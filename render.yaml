@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: caminho-calcados-loja
+    runtime: node
+    plan: starter
+    region: ohio
+    buildCommand: npm install
+    startCommand: mkdir -p /var/data/uploads && rm -rf uploads && ln -s /var/data/uploads uploads && npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/caminho.db
+      - key: ADMIN_EMAIL
+        value: admin@caminho.com.br
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: FLYNEX_URL
+        value: https://flynex.onrender.com/projetos.html
+    disk:
+      name: caminho-dados
+      mountPath: /var/data
+      sizeGB: 1

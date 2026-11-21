@@ -1,0 +1,29 @@
+CAMINHO CALÇADOS - ORGANIZAÇÃO DO CÓDIGO
+
+Este projeto foi organizado em arquivos para ficar mais fácil de entender e manter.
+
+PASTA JS
+- script.js: controla a navegação entre as páginas e as ações gerais.
+- lib.js: reúne funções que são usadas em várias telas.
+- views-shop.js: monta as páginas da loja e dos produtos.
+- views-account.js: cuida das telas de login, cadastro e conta.
+- views-admin.js: monta as telas do painel administrativo.
+- carousel.js: controla o carrossel da página inicial.
+- pwa.js: permite instalar o site como aplicativo e ajuda no uso sem internet.
+
+PASTA server
+- index.js: inicia o servidor e recebe as requisições do site.
+- db.js: conecta e prepara o banco de dados.
+- auth.js: verifica senhas, login e sessões.
+- services.js: contém as regras de funcionamento da loja.
+- seed.js: cria os dados iniciais quando necessário.
+- bling.js: faz a integração com o Bling.
+- smoke-test.js: executa testes para conferir as principais funções.
+
+Os comentários foram escritos para explicar a função de cada parte sem deixar o
+código cheio de explicações difíceis. A lógica das funcionalidades foi mantida.
+
+Para iniciar: npm start
+Para testar: npm test
+
+O projeto utiliza Node.js 22.5 ou superior.

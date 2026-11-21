@@ -1,0 +1,12 @@
+{
+  "name": "caminho-calcados",
+  "version": "1.0.0",
+  "description": "E-commerce Caminho Calçados & Confecções — Node.js + SQLite, sem dependências externas",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning server/smoke-test.js"
+  },
+  "engines": { "node": ">=22.5" },
+  "private": true
+}
